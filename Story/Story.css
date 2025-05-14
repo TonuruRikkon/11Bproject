@@ -1,0 +1,22 @@
+.center_greencorlored {
+  background-color: greenyellow;
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+}
+.center_text{
+  text-align: center;  
+}
+.parent{
+  margin: 1rem;
+  padding: 2rem 2rem;
+}
+.child{
+  display:inline-block;
+  border: 1px solid blue;
+  padding: 1rem,1rem;
+  vertical-align: middle;
+}
+button:focus {
+  outline: none;
+}
