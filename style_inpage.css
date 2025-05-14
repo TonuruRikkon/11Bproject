@@ -47,6 +47,7 @@ body{
 }
 @media (max-width: 760px) {
     iframe[src*="drive.google.com"]{
-      width: 50%;
+      height: 65%;
+      width: 65%;
     }
 }
