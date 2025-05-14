@@ -35,7 +35,6 @@ body{
       cursor: pointer;
 }
 
-/* Media query cho màn hình nhỏ hơn 768px (điện thoại) */
 @media (max-width: 1250px) {
   div[style*="display: flex;"] {
       flex-direction: column; /* Sắp xếp các phần tử theo cột */
@@ -46,9 +45,4 @@ body{
       width: 100%; /* Đặt chiều rộng 100% cho cả hai phần */
   }
   
-}
-@media (max-width: 760px) {
-  iframe[src*="google"]{
-    width: 70%;
-  }
 }
