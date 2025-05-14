@@ -49,7 +49,6 @@ body{
 }
 @media (max-width: 760px) {
   iframe[src*="google"]{
-    height: 70%;
     width: 70%;
   }
 }
