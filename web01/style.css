@@ -1,0 +1,41 @@
+body{
+  background-color: #272727;
+  color: antiquewhite;
+}
+.center_greencorlored {
+  background-color: rgb(0, 0, 0);
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+}
+.center_text{
+  text-align: center;  
+}
+.parent{
+  margin: 1rem;
+  padding: 2rem 2rem;
+}
+.child{
+  display:inline-block;
+  border: 1px solid blue;
+  padding: 1rem,1rem;
+  vertical-align: middle;
+}
+/* Media query cho màn hình nhỏ hơn 768px (điện thoại) */
+@media (max-width: 1250px) {
+  div[style*="display: flex;"] {
+      flex-direction: column; /* Sắp xếp các phần tử theo cột */
+  }
+
+  div[style*="flex:1"], 
+  div[style*="flex:1.5"] {
+      width: 100%; /* Đặt chiều rộng 100% cho cả hai phần */
+  }
+  
+}
+@media (max-width: 760px) {
+  iframe[src*="google"]{
+    height: 70%;
+    width: 70%;
+  }
+}
