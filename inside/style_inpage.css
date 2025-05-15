@@ -1,10 +1,10 @@
 body{
-  background-color: #272727;
-  color: antiquewhite;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   font-family: Cascadia Mono;
 }
 .header{
-  background-color: black;
+  background-color: rgb(0, 255, 26);
   display: flex;
 }
 .center_text{
@@ -21,6 +21,9 @@ body{
   padding: 1rem,1rem;
   vertical-align: middle;
 }
+.data-box{
+  background-color: rgb(0, 255, 26);
+}
 
 .fancybut{
       font-family: Cascadia Mono;
@@ -34,7 +37,7 @@ body{
       cursor: pointer;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1100px) {
   div[style*="display: flex;"] {
       flex-direction: column; /* Sắp xếp các phần tử theo cột */
   }
