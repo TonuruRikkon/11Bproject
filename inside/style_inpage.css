@@ -53,8 +53,8 @@ iframe{
   
 }
 @media (max-width: 760px) {
-    iframe[src*="drive.google.com"]{
-      height: 130%;
+    iframe[src*="google"]{
+      height: 200;
       width: 100%;
     }
 }
