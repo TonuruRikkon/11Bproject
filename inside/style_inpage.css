@@ -1,10 +1,13 @@
 body{
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  font-family: Cascadia Mono;
+  font-family: Arial, Helvetica, sans-serif;
+}
+iframe{
+  border-radius: 20px;
 }
 .header{
-  background-color: rgb(0, 255, 26);
+  background-color: #64c27d ;
   display: flex;
 }
 .center_text{
@@ -22,12 +25,13 @@ body{
   vertical-align: middle;
 }
 .data-box{
-  background-color: rgb(0, 255, 26);
+  background-color: #8ce4a4;
+  border-radius: 20px;
 }
 
 .fancybut{
       font-family: Cascadia Mono;
-      font-size: 18px;       /* Tăng kích thước chữ */
+      font-size: 10px;       /* Tăng kích thước chữ */
       padding: 10px 20px;    /* Tăng kích thước nút */
       background-color: #6a6a6a;  /* Một tông màu – xanh dương */
       color: white;          /* Chữ màu trắng */
