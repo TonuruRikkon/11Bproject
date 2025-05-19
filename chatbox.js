@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Open button
     const openBtn = document.createElement("button");
     openBtn.id = "chatOpenBtn";
-    openBtn.textContent = "💬 Chat";
+    openBtn.textContent = "AI";
     openBtn.title = "Mở chat";
     openBtn.style.display = "none";
     document.body.appendChild(openBtn);
@@ -46,7 +46,7 @@ style.innerHTML = `
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         background-color: white;
-        display: flex;
+        display: none;
         flex-direction: column;
         z-index: 1000;
     }
