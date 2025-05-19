@@ -46,7 +46,7 @@ style.innerHTML = `
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         background-color: white;
-        display: none;
+        display: flex;
         flex-direction: column;
         z-index: 1000;
     }
