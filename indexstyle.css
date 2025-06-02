@@ -47,3 +47,97 @@
   cursor: pointer;
   margin-left: 5px;
 }
+body {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+hr {
+  border: 1px solid rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+dd {
+  padding: 10px;
+}
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;       /* Tăng kích thước ch  ữ */
+  padding: 10px 20px;    /* Tăng kích thước nút */
+  background-color: #fbff88;  /* Một tông màu – xanh dương */
+  color: rgb(0, 0, 0);          /* Chữ màu trắng */
+  border: none;          /* Bỏ viền */
+  border-radius: 5px;    /* Bo tròn nhẹ */
+  box-shadow: none;      /* Không đổ bóng */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.title-box {
+  background-color: #64c27d;  /* Màu nền */
+  color: rgba(0, 0, 0, 0.811);               /* Màu chữ */
+  padding: 10px 20px;         /* Giúp nội dung trông "thoáng" hơn */
+  border-radius: 20px;        /* Bo tròn góc */
+  display: inline-block;      /* Để bo tròn ô vừa khít nội dung */
+  font-weight: bold;          /* Chữ đậm hơn */            /* Cỡ chữ lớn hơn */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);  /* Đổ bóng nhẹ nếu muốn nổi hơn */
+}
+.background-cover {
+  margin: 0 auto; /* Căn giữa theo chiều ngang */
+  margin-bottom: 30px;
+  width: 100%; /* Hoặc một giá trị cố định như 300px */ /* Giới hạn chiều rộng tối đa */
+  height: 200px;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.centered-title {
+  position: absolute;
+  top:75%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  display: flex;
+}
+.custom-font {
+  font-size: 25px;
+}
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
