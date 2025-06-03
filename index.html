@@ -1,105 +1,186 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>11BProject</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="indexstyle.css">
-  <script src="chatbox.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11BProject test</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="chatboxCSS.css">
+    <script src="chatbox.js"></script>
 </head>
 <body>
-  <div class="background-cover">
-    <div class="title-box centered-title custom-font">HỌC HÓA CÙNG 11B!</div>
-  </div>
-  <hr>
-  <h1 class="great-vibes-regular" style="font-size: 40px; background-color: #64c27d; margin-bottom: 4px; padding: 10px; border-radius: 10px;">
-    "Muốn đi nhanh thì đi một mình, nhưng muốn đi xa hãy đi cùng nhau…"
-  </h1>
-  <div class="container" style="background-color: #8ce4a4; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
-    <div class="column">
-      <h2>1. Giới thiệu</h2>
-      <ul>
-        <li>Chào mừng thầy cô và các bạn học sinh đã đến với trang học liệu này, nơi cung cấp những video đồ họa, kiến thức thú vị, giúp cho những bài Hóa khô khan trở nên hấp dẫn.</li>
-        <li>Tất cả tài liệu, video đều được cung cấp miễn phí cho mọi người!</li>
-      </ul>
-    </div>
-    <div class="column">
-      <h2>2. Lịch sử phát triển của trang web</h2>
-      <ul>
-        <li>Được thực hiện bởi lớp 11B - trường TH - THCS - THPT Văn Lang.</li>
-        <li>Thiết kế và nội dung bởi nhóm học sinh yêu thích Hóa học và IT.</li>
-      </ul>
-    </div>
-  </div>
-  <hr>
-  <h1 class="title-box" style="display: flex; justify-content: center;">Nội dung</h1>
-  <div class="container">
-    <div class="column">
-      <h2>Đang có sẵn:</h2>
-      <dl>
-        <dd>
-          <button onclick="toggleContent('hoa10')" style="background-color: #8ce4a4;">Hóa 10:</button>
-          <dl id="hoa10" style="display: none;">
-            <dd><a href="inside/hydrogen_halide.html"><button>Hydrogen halide và 1 số phản ứng của ion</button></a></dd>
-            <dd><a href="inside/BangTuanHoan.html"><button>Cấu tạo bảng tuần hoàn các nguyên tố hóa học</button></a></dd>
-            <dd><a href="inside/Yeutoanhhuong.html"><button>Các yếu tố ảnh hưởng đến tốc độ phản ứng</button></a></dd>
-            <dd><a href="inside/ngtohoahoc.html"><button>Nguyên tố hóa học</button></a></dd>
-            <dd><a href="inside/Elthapy.html"><button>Elthapy tạo thành và biến thiên elthapy của phản ứng hóa học</button></a></dd>
-          </dl>
-        </dd>
-        <dd>
-          <button onclick="toggleContent('hoa11')" style="background-color: #8ce4a4;">Hóa 11:</button>
-          <dl id="hoa11" style="display: none;">
-            <dd><a href="inside/Sulfuric_acid_va_muoi_Sulfate.html"><button>Sulfuric acid và muối Sulfate</button></a></dd>
-            <dd><a href="inside/Amonia.html"><button>Ammonia, muối Ammonium</button></a></dd>
-            <dd><a href="inside/Alkane.html"><button>Alkane</button></a></dd>
-            <dd><a href="inside/Alcohol.html"><button>Alcohol</button></a></dd>
-          </dl>
-        </dd>
-      </dl>
-    </div>
-    <div class="column">
-      <h2>Sắp tới:</h2>
-      <dl>
-        <dd><a href="StillInUpdate.html"><button style="background-color: gray; color: aliceblue; text-shadow: black;">Sulfur và Sulfur dioxide</button></a></dd>
-        <dd><a href="StillInUpdate.html"><button style="background-color: gray; color: aliceblue; text-shadow: black;">Carboxylic</button></a></dd>
-        <dd><a href="StillInUpdate.html"><button style="background-color: gray; color: aliceblue; text-shadow: black;">Quy tắc octet</button></a></dd>
-        <dd><a href="StillInUpdate.html"><button style="background-color: gray; color: aliceblue; text-shadow: black;">Liên kết hydrogen và tương tác Van der Waals</button></a></dd>
-        <dd><a href="StillInUpdate.html"><button style="background-color: gray; color: aliceblue; text-shadow: black;">Arene</button></a></dd>
-        <dd><a href="StillInUpdate.html"><button style="background-color: gray; color: aliceblue; text-shadow: black;">Phenol</button></a></dd>
-      </dl>
-    </div>
-  </div>
-  <script>
-    function toggleContent(id) {
-      const content = document.getElementById(id);
-      content.style.display = content.style.display === "none" ? "block" : "none";
-    }
-  </script>
-  <br>
-  <hr>
-  <div style="background-color: #8ce4a4; border-radius: 20px; margin-bottom: -20px;">
-    <h1 style="margin-top: -15px; margin-bottom: -25px; padding: 8px;">Credit</h1>
+
+
+
+<section class="header">
+    <button id="toggle-theme">light/dark mode</button>
+    <!-- <nav>
+        
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="HideMenu()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">COURSE</a></li>
+                <li><a href="">CREDIT</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="ShowMenu()"></i>
+    </nav> -->
+
+<div class="text-box">
+    <h1>HỌC CÙNG 11B</h1>
+    <p>"Muốn đi nhanh thì đi một mình, nhưng muốn đi xa<br>hãy đi cùng nhau"</p>
+    <a href="" class="hero-btn">Lướt xuống để quan sát nhiều hơn</a>
+</div>
+
+</section>
+
+<!-- Home and thông tin -->
+
+<section class="home">
     <div class="container">
-      <div class="column">
-        <h2>1. Lập trình viên</h2>
-        <ul>
-          <li>Lê Nguyễn Thái Hoàng: Đội tuyển tin</li>
-          <li>Đặng Minh Phú: Đội tuyển tin</li>
-        </ul>
-      </div>
-      <div class="column">
-        <h2>2. Hỗ trợ</h2>
-        <ul>
-          <li>Vũ Vân Anh</li>
-          <li>Vũ Xuân Kiên</li>
-          <li>Nguyễn Trần Thế Tâm</li>
-        </ul>
-      </div>
+        <div class="column">
+            <h2>1: Giới thiệu</h1>
+            <ul>
+                <li>Chào mừng thầy cô và các bạn học sinh đã đến với trang học liệu này, nơi cung cấp những video đồ họa, kiến thức thú vị, giúp cho những bài Hóa khô khan trở nên hấp dẫn.</li>
+                <li>Tất cả tài liệu, video đều được cung cấp miễn phí cho mọi người!</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h2>2: Thông báo</h2>
+            <ul>
+                <li>31/5/2025: Cập nhật lại giao diện của trang "đang cập nhật"</li>
+                <li>24/5/2025: Cập nhật lại giao diện của Web</li>
+                <li>01/5/2025: Các bài học lần lượt được thêm vào trong Web</li>
+                <li>10/4/2025: Thêm tính năng AI vào Web</li>
+                <li>15/3/2025: Phiên bản đầu tiên của web được viết ra.</li>
+            </ul>
+        </div>
     </div>
-  </div>
+    
+</section>
+<!-- course -->
+<section class="course">
+    <h1>Các bài học</h1>
+
+    <div class="container">
+        <div class="course-col">
+            <button class="toggle-btn" onclick="toggleContent('hoa10')">Hóa 10</button>
+            <p>Khám phá cấu tạo nguyên tử, bảng tuần hoàn và liên kết hóa học, Hóa 10 giúp học sinh hiểu bản chất của chất và phản ứng hóa học, đặt nền tảng cho việc giải thích các hiện tượng hóa học trong tự nhiên và đời sống.</p>
+            <dl id="hoa10" class="lesson-list">
+                <dd><a href="inside/hydrogen_halide.html"><button class="lesson-btn">Hydrogen halide và 1 số phản ứng của ion</button></a></dd>
+                <dd><a href="inside/BangTuanHoan.html"><button class="lesson-btn">Cấu tạo bảng tuần hoàn các nguyên tố hóa học</button></a></dd>
+                <dd><a href="inside/Yeutoanhhuong.html"><button class="lesson-btn">Các yếu tố ảnh hưởng đến tốc độ phản ứng</button></a></dd>
+                <dd><a href="inside/ngtohoahoc.html"><button class="lesson-btn">Nguyên tố hóa học</button></a></dd>
+                <dd><a href="inside/Elthapy.html"><button class="lesson-btn">Elthapy tạo thành và biến thiên elthapy của phản ứng hóa học</button></a></dd>
+                <dd><a href="StillInUpdate.html"><button class="didnt-complete">Quy tắc octet</button></a></dd>
+                <dd><a href="StillInUpdate.html"><button class="didnt-complete">Sulfur và Sulfur dioxide</button></a></dd>
+                <dd><a href="StillInUpdate.html"><button class="didnt-complete">Liên kết hydrogen và tương tác Van Der Waals</button></a></dd>
+          </dl>
+        </div>
+        <div class="course-col">
+            <button class="toggle-btn" onclick="toggleContent('hoa11')">Hóa 11</button>
+            <p>Tiếp tục phát triển kiến thức với các loại phản ứng phổ biến như oxi hóa – khử, axit – bazơ và cân bằng hóa học, Hóa 11 còn đi sâu vào hóa học vô cơ với các nhóm nguyên tố như halogen, kim loại kiềm và nhóm nitơ.</p>
+            <dl id="hoa11" class="lesson-list">
+                <dd><a href="inside/Sulfuric_acid_va_muoi_Sulfate.html"><button class="lesson-btn">Sulfuric acid và muối Sulfate</button></a></dd>
+                <dd><a href="inside/Amonia.html"><button class="lesson-btn">Ammonia, muối Ammonium</button></a></dd>
+                <dd><a href="inside/Alkane.html"><button class="lesson-btn">Alkane</button></a></dd>
+                <dd><a href="inside/Alcohol.html"><button class="lesson-btn">Alcohol</button></a></dd>
+                <dd><a href="StillInUpdate.html"><button class="didnt-complete">Carboxylic</button></a></dd>
+                <dd><a href="StillInUpdate.html"><button class="didnt-complete">Arene</button></a></dd>
+                <dd><a href="StillInUpdate.html"><button class="didnt-complete">Phedol</button></a></dd>
+
+          </dl>
+        </div>
+        <div class="course-col">
+            <button class="toggle-btn" onclick="toggleContent('hoa12')">Hóa 12</button>
+            <p>Tập trung vào hóa học hữu cơ và ứng dụng, Hóa 12 giúp học sinh làm quen với hợp chất cacbon, polime và kiến thức tổng hợp, phục vụ cho ôn thi THPT và hiểu rõ hơn vai trò của hóa học trong công nghiệp và đời sống.</p>
+            <dl id="hoa12" class="lesson-list">
+                <dd><a href="StillInUpdate.html"><button class="didnt-complete">Vẫn đang trong quá trình cập nhật</button></a></dd>
+          </dl>
+        </div>
+    </div>
+
+</section>
+
+<!-- Hình ảnh của trang web trong những ngày đầu -->
+
+<section class="image-gallery">
+    <h1>Hình ảnh của trang web trong những phiên bản cũ </h1>
+    
+    <div class="container">
+            <div class="image-col">
+            <img src="images/fr.png">
+            <div class="layer">
+                <h3>31/5/2025</h3>
+            </div>
+        </div>
+        <div class="image-col">
+            <img src="images/SIGMA.png">
+            <div class="layer">
+                <h3>3/5/2025</h3>
+            </div>
+        </div>
+        <div class="image-col">
+            <img src="images/chillguy.png">
+            <div class="layer">
+                <h3>10/4/2025</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="credit-section">
+    <div class="container">
+        <h1 class="section-title">Credit</h1>
+        <div class="credit-content">
+            <div class="credit-group">
+                <h2 class="credit-subtitle">1. Lập trình viên</h2>
+                <ul class="credit-list">
+                    <li>Lê Nguyễn Thái Hoàng: Đội tuyển tin</li>
+                    <li>Đặng Minh Phú: Đội tuyển tin</li>
+                </ul>
+            </div>
+            <div class="credit-group">
+                <h2 class="credit-subtitle">2. Hỗ trợ</h2>
+                <ul class="credit-list">
+                    <li>Vũ Vân Anh</li>
+                    <li>Vũ Xuân Kiên</li>
+                    <li>Nguyễn Trần Thế Tâm</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- JavaScript to toggle Menu -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function ShowMenu(){
+        navLinks.style.right = "0";
+    }
+    function HideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+<!-- JavaScript to toggle content -->
+<script>
+
+    function toggleContent(id) {
+        const content = document.getElementById(id);
+        content.style.display = content.style.display === "none" ? "block" : "none";
+    }
+</script>
+
+<script src="script.js"></script>
+
 </body>
 </html>

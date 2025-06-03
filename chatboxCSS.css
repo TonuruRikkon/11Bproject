@@ -1,0 +1,98 @@
+/* AI Chat Button Styles - Đồng bộ với nút toggle theme */
+#chatOpenBtn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px; /* Đặt cao hơn nút toggle theme */
+    z-index: 100;
+    padding: 12px 24px;
+    background-color: #89a293;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#chatOpenBtn:hover {
+    background-color: #78ae8d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+#chatOpenBtn:active {
+    transform: scale(0.96);
+}
+
+#chatOpenBtn::before {
+    content: "AI Chat";
+    font-size: 18px;
+}
+
+/* Chat box container */
+#chatBox {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    width: 320px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    background-color: white;
+    z-index: 1000;
+    overflow: hidden;
+    transform: scale(0.9);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+#chatBox.show {
+    transform: scale(1);
+    opacity: 1;
+}
+
+#chatHeader {
+    background-color: #89a293;
+    color: white;
+    padding: 14px 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chatCloseBtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#chatCloseBtn:hover {
+    transform: scale(1.2);
+}
+
+/* Dark mode styles */
+body.dark-mode #chatOpenBtn {
+    background-color: #3a5a4a;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+body.dark-mode #chatOpenBtn:hover {
+    background-color: #4d7a62;
+}
+
+body.dark-mode #chatBox {
+    background-color: #2d3e3f;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+body.dark-mode #chatHeader {
+    background-color: #3a5a4a;
+}

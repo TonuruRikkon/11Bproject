@@ -5,15 +5,39 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="indexstyle.css">
+  <link rel="stylesheet" href="StillInUpdateCSS.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-    <div class="header">
-        <a href="index.html">
-            <button class="fancybut">Quay Lại</button>
-        </a>                
+    <button id="toggle-theme">light/dark mode</button>
+    
+    <a href="index.html">
+        <button class="fancybut">← Quay Lại</button>
+    </a>
+
+    <div class="content-box">
+        <h1>Vẫn đang cập nhật ⚙️</h1>
+        <p>Chúng tôi đang trong quá trình thi công bài học này, vui lòng tránh xa 5km nhé.<br>Xin lỗi vì đã làm phiền!</p>
     </div>
-    <h1>Vẫn đang cập nhật</h1>
-    <p>Tại sao bạn lại ở đây?</p>
+
+    <script>
+        // Toggle theme button
+        const button = document.getElementById('toggle-theme');
+        button.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            
+            // Lưu trạng thái vào localStorage
+            const isDarkMode = document.body.classList.contains('dark-mode');
+            localStorage.setItem('darkMode', isDarkMode);
+        });
+
+        // Kiểm tra trạng thái khi tải trang
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedMode = localStorage.getItem('darkMode');
+            if (savedMode === 'true') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
 </body>
 </html>
