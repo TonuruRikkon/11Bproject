@@ -28,7 +28,8 @@ class AIChatWidget {
         // Create open button
         this.openBtn = document.createElement('button');
         this.openBtn.id = 'chatOpenBtn';
-        
+                this.chatBox.classList.add('minimized');
+
         // Append to body
         document.body.appendChild(this.chatBox);
         document.body.appendChild(this.openBtn);
