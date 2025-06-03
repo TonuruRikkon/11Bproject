@@ -34,6 +34,19 @@
     font-size: 18px;
 }
 
+#chatBox.minimized {
+    height: 0px !important;
+    width: 0px !important;
+    overflow: hidden;
+    transition: height 0.3s, width 0.3s;
+}
+#chatBox.minimized #chatHeader {
+    border-radius: 10px;
+}
+#chatBox.minimized iframe {
+    display: none;
+}
+
 /* Chat box container */
 #chatBox {
     position: fixed;

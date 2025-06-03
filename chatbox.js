@@ -63,11 +63,12 @@ class AIChatWidget {
 
     showChatBox() {
         this.chatBox.classList.add('show');
+        this.chatBox.classList.remove('minimized');
         this.openBtn.style.display = 'none';
     }
 
     hideChatBox() {
-        this.chatBox.classList.remove('show');
+        this.chatBox.classList.add('minimized');
         this.openBtn.style.display = 'flex';
     }
 }
