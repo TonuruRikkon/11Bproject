@@ -96,3 +96,6 @@ body.dark-mode #chatBox {
 body.dark-mode #chatHeader {
     background-color: #3a5a4a;
 }
+html {
+  scroll-behavior:smooth;
+}

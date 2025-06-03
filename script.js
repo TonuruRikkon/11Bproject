@@ -39,3 +39,43 @@ function toggleContent(id) {
     button.classList.remove('clicked');
   }, 300);
 }
+
+//adding test.txt contents to the website
+fetch('README.md')
+  .then(response => response.text())
+  .then(text => {
+    const ul = document.getElementById('thongbao-list');
+    text.split(/\r?\n/).forEach(line => {
+      if (line.trim() !== "") {
+        const li = document.createElement('li');
+        li.textContent = line;
+        ul.appendChild(li);
+      }
+    });
+  });
+
+//search bar
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('search');
+    if (searchInput) {
+        searchInput.addEventListener('input', function() {
+            const filter = this.value.toLowerCase();
+            // Get all lesson-list dl elements
+            document.querySelectorAll('dl.lesson-search').forEach(dl => {
+                let hasVisible = false;
+                dl.querySelectorAll('dd').forEach(dd => {
+                    const text = dd.textContent.toLowerCase();
+                    if (text.includes(filter)) {
+                        dd.style.display = '';
+                        hasVisible = true;
+                    } else {
+                        dd.style.display = 'none';
+                    }
+                });
+                // Optionally hide the whole dl if nothing matches
+                dl.style.display = (filter && hasVisible) ? '' : 'none';
+            });
+        });
+        searchInput.dispatchEvent(new Event('input'));
+    }
+});

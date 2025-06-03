@@ -36,14 +36,14 @@
 <div class="text-box">
     <h1>HỌC CÙNG 11B</h1>
     <p>"Muốn đi nhanh thì đi một mình, nhưng muốn đi xa<br>hãy đi cùng nhau"</p>
-    <a href="" class="hero-btn">Lướt xuống để quan sát nhiều hơn</a>
+    <a href="#header" class="hero-btn">Lướt xuống để quan sát nhiều hơn</a>
 </div>
 
 </section>
 
 <!-- Home and thông tin -->
 
-<section class="home">
+<section class="home" id="header">
     <div class="container">
         <div class="column">
             <h2>1: Giới thiệu</h1>
@@ -54,12 +54,7 @@
         </div>
         <div class="column">
             <h2>2: Thông báo</h2>
-            <ul>
-                <li>31/5/2025: Cập nhật lại giao diện của trang "đang cập nhật"</li>
-                <li>24/5/2025: Cập nhật lại giao diện của Web</li>
-                <li>01/5/2025: Các bài học lần lượt được thêm vào trong Web</li>
-                <li>10/4/2025: Thêm tính năng AI vào Web</li>
-                <li>15/3/2025: Phiên bản đầu tiên của web được viết ra.</li>
+            <ul id="thongbao-list">
             </ul>
         </div>
     </div>
@@ -69,6 +64,26 @@
 <section class="course">
     <h1>Các bài học</h1>
 
+    <section class="course-search" style="text-align:center; margin: 30px 0 10px 0;">
+        <input type="text" id="search" placeholder="Tìm kiếm bài học..." style="width:60%;padding:8px;font-size:16px;border-radius: 30px">
+    </section>
+            <dl id="searchcontent" class="lesson-search">
+                <dd><a href="inside/hydrogen_halide.html"><button class="lesson-btn">Hydrogen halide và 1 số phản ứng của ion</button></a></dd>
+                <dd><a href="inside/BangTuanHoan.html"><button class="lesson-btn">Cấu tạo bảng tuần hoàn các nguyên tố hóa học</button></a></dd>
+                <dd><a href="inside/Yeutoanhhuong.html"><button class="lesson-btn">Các yếu tố ảnh hưởng đến tốc độ phản ứng</button></a></dd>
+                <dd><a href="inside/ngtohoahoc.html"><button class="lesson-btn">Nguyên tố hóa học</button></a></dd>
+                <dd><a href="inside/Elthapy.html"><button class="lesson-btn">Elthapy tạo thành và biến thiên elthapy của phản ứng hóa học</button></a></dd>
+                <dd><a href="inside/Sulfuric_acid_va_muoi_Sulfate.html"><button class="lesson-btn">Sulfuric acid và muối Sulfate</button></a></dd>
+                <dd><a href="inside/Amonia.html"><button class="lesson-btn">Ammonia, muối Ammonium</button></a></dd>
+                <dd><a href="inside/Alkane.html"><button class="lesson-btn">Alkane</button></a></dd>
+                <dd><a href="inside/Alcohol.html"><button class="lesson-btn">Alcohol</button></a></dd>
+                <dd><a href="StillInUpdate.html"><button class="didnt-complete">Quy tắc octet</button></a></dd>
+                <dd><a href="StillInUpdate.html"><button class="didnt-complete">Sulfur và Sulfur dioxide</button></a></dd>
+                <dd><a href="StillInUpdate.html"><button class="didnt-complete">Liên kết hydrogen và tương tác Van Der Waals</button></a></dd>
+                <dd><a href="StillInUpdate.html"><button class="didnt-complete">Carboxylic</button></a></dd>
+                <dd><a href="StillInUpdate.html"><button class="didnt-complete">Arene</button></a></dd>
+                <dd><a href="StillInUpdate.html"><button class="didnt-complete">Phedol</button></a></dd>
+            </dl>
     <div class="container">
         <div class="course-col">
             <button class="toggle-btn" onclick="toggleContent('hoa10')">Hóa 10</button>
