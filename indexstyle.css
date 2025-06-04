@@ -16,7 +16,7 @@ body {
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(70, 120, 90, 0.432), rgba(70, 120, 90, 0.7)), url(images/background.jpg);
+    background-image: linear-gradient(rgba(80, 118, 95, 0.731), rgba(15, 57, 32, 0.7)), url(images/background.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -101,7 +101,7 @@ nav img {
     border-color: #89a293;
     color: #e6f2f3;
     background-color: rgba(255, 255, 255, 0.2);
-    border: 1px solid #9fecb3;
+    border: 1px solid #456b4f;
     padding: 12px 34px;
     font-size: 13px;
     background: transparent;
@@ -111,7 +111,7 @@ nav img {
 }
 
 .hero-btn:hover {
-    background: #9fecb3;
+    background: #456b4f;
 }
 
 /* ===== MAIN CONTENT SECTIONS ===== */
@@ -135,17 +135,17 @@ h1 {
     font-weight: 600;
 }
 
-h2, h3 {
+h2, h3{
     font-weight: 600;
     margin: 10px 0;
     text-align: center;
-    color: #fff;
+    color: #1c422d;
 }
 
 p, ul {
-    color: #e6f2f3;
+    color: #335e46;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 22px;
     padding: 10px;
 }
@@ -164,9 +164,13 @@ p, ul {
 
 .column{
     flex: 1;
-    background: #78b38f; /* Thêm màu nền cho column */
+    background: #93c9a8; /* Thêm màu nền cho column */
     border-radius: 10px;
     padding: 20px;
+    transition: 1s;
+}
+.column:hover {
+    box-shadow: 0 0 20px rgba(70, 120, 90, 0.3);
 }
 .row {
     margin-top: 5%;
@@ -182,6 +186,9 @@ p, ul {
     margin-bottom: 5%;
     padding: 20px 12px;
     transition: 1s;
+}
+.course-col p{
+    color: #335e46 !important;
 }
 
 .course-col:hover {
@@ -293,14 +300,16 @@ body.dark-mode {
 }
 
 body.dark-mode ul,
-body.dark-mode p {
+body.dark-mode h2, h3, p {
     color: #c8e6d5;
 }
 
 body.dark-mode .course-col {
     background: #2d4a3a;
 }
-
+body.dark-mode .course-col p {
+    color: #c8e6d5 !important;
+}
 body.dark-mode .course-col:hover {
     box-shadow: 0 0 20px rgba(100, 150, 120, 0.3);
 }
@@ -326,7 +335,7 @@ body.dark-mode .column {
     background: #2d4a3a;
 }
 body.dark-mode .header {
-    background-image: linear-gradient(rgba(30, 60, 45, 0.605), rgba(30, 60, 45, 0.7)), url(images/background.jpg);
+    background-image: linear-gradient(rgba(19, 70, 44, 0.591), rgba(9, 49, 32, 0.767)), url(images/background.jpg);
 }
 
 body.dark-mode .hero-btn {
