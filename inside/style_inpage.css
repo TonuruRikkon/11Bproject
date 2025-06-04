@@ -33,11 +33,11 @@ h1, h2, h3, p, .subtitle {
 }
 
 /* Thêm hiệu ứng pulse cho nút toggle */
-@keyframes pulse {
+/* @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
     100% { transform: scale(1); }
-}
+} */
 
 #toggle-theme {
     animation: pulse 4s infinite ease-in-out;
@@ -247,7 +247,7 @@ p{
 /* Footer */
 .lesson-footer {
     text-align: center;
-    padding: 1.5rem;
+    padding: 6rem;
     background: linear-gradient(#78b38f, #4b8561);
     color: var(--white);
     margin-top: 2rem;
