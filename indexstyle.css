@@ -439,9 +439,9 @@ body.dark-mode #toggle-theme{
 #toggle-theme {
     position: fixed;
     left: 10px;
-    bottom: 20px;
+    bottom: 19px;
     z-index: 100;
-    padding: 12px 20px;
+    padding: 15px 20px;
     background-color: #89a293;
     color: white;
     border: none;
@@ -452,12 +452,12 @@ body.dark-mode #toggle-theme{
 }
 
 #toggle-theme:hover {
-    background-color: #5cb87c;
-    transform: translateY(2px);
+    background-color: #78ae8d;
+    transform: translateY(-2px);
 }
 
 body.dark-mode #toggle-theme {
-    background-color: #424843;
+    background-color: #4d7a62;
     color: white;
 }
 
