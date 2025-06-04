@@ -30,58 +30,26 @@ body {
 h1, h2, h3, p, .subtitle {
     transition: color 0.5s ease;
 }
-
-/* Thêm hiệu ứng pulse cho nút toggle */
-/* @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-} */
-
-#toggle-theme {
-    animation: pulse 4s infinite ease-in-out;
+iframe{
+  border-radius: 20px;
 }
-
-
-body.dark-mode, 
-body.dark-mode * {
-    animation: fadeIn 0.5s ease-in-out;
+.header{
+  background-color: #64c27d ;
+  display: flex;
 }
-body {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
-    color: var(--dark-text);
-    background-color: var(--light-bg);
+.center_text{
+  display: flex;
+  justify-content: center;
 }
-h3 {
-    font-size: 1.5rem;
+.parent{
+  margin: 1rem;
+  padding: 2rem 2rem;
 }
-p{
-    color: #f0f9f5;
-}
-
-/* Header */
-.lesson-header {
-    background: linear-gradient(#4b8561, #78b38f);
-    color: var(--white);
-    padding: 1.5rem 2rem;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    box-shadow: var(--shadow);
-}
-
-.back-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    background-color: #90c4a5;
-    color: var(--white);
-    text-decoration: none;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    font-weight: 600;
+.child{
+  display:inline-block;
+  border: 1px solid blue;
+  padding: 1rem,1rem;
+  vertical-align: middle;
 }
 
 .back-button:hover {
