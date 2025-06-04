@@ -1,3 +1,6 @@
+*{
+    font-family: "Cascadia Mono", monospace;
+}
 body {
     background-color: #eefff2;
     font-family: "Cascadia Mono", monospace;
@@ -25,7 +28,6 @@ body {
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
     transition: all 0.3s ease;
     color: #333;
-    font-weight: bold;
 }
 
 #toggle-theme:hover {
@@ -109,3 +111,65 @@ body.dark-mode #toggle-theme {
     background-color: #4d7a62;
     color: white;
 }
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .content-box {
+        width: 85%;
+        padding: 30px 20px;
+        margin: 20px 0;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    /* Nút Quay Lại - phóng to và tối ưu */
+    .fancybut {
+        width: 100%;
+        padding: 16px;
+        font-size: 1.2em;
+        margin: 15px 0;
+        box-sizing: border-box;
+        border-radius: 30px;
+    }
+
+    /* Nút Light/Dark Mode - phóng to và tối ưu vị trí */
+    #toggle-theme {
+        position: fixed;
+        bottom: 30px;
+        width: 90%;
+        left: 2%;
+        max-width: 250px;
+        padding: 16px;
+        font-size: 1.2em;
+        margin-top: 0;
+        border-radius: 30px;
+    }
+    #toggle-theme:hover {
+        background-color: #5cb87c;
+        transform: translateY(1px);
+    }
+    /* Hiệu ứng hover cho mobile (nếu cần) */
+}
+/* #toggle-theme {
+    position: fixed;
+    left: 10px;
+    bottom: 20px;
+    z-index: 100;
+    padding: 12px 20px;
+    background-color: #79d191;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    color: #333;
+} */
