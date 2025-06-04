@@ -168,10 +168,13 @@ p{
 }
 
 .objective-card h3 {
-    color: #f0f9f5;
+    color: #1c422d;
     margin-bottom: 1rem;
 }
-
+.objective-card p {
+    color: #335e46;
+    font-size: 1.3rem;
+}
 /* Key concepts */
 .key-concepts {
     margin-bottom: 3rem;
