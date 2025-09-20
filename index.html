@@ -29,7 +29,7 @@
 <!-- Home and thông tin -->
 
 <section class="home" id="header">
-    <div class="container">
+    <div class="container"> 
         <div class="column">
             <h2>1: Giới thiệu</h1>
             <ul>
@@ -181,6 +181,23 @@
 </script>
 
 <script src="script.js"></script>
+
+
+<script>
+document.querySelector('.hero-btn').addEventListener('click', function(e) {
+    e.preventDefault(); // Ngăn chuyển hướng mặc định
+    // Cuộn xuống phần #header
+    // Cuộn xuống phần #header với delay 600ms
+    setTimeout(function() {
+        document.getElementById('header').scrollIntoView({ behavior: 'smooth' });
+        // Sau khi cuộn xong (thêm delay 600ms), ẩn header
+        setTimeout(function() {
+            document.querySelector('.header').remove();
+        }, 600);
+    }, );
+});
+</script>
+
 
 </body>
 </html>
