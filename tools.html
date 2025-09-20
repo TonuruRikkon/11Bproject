@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <title>Công cụ</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <style>
+        .header-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+            padding: 0 30px;
+            position: relative;
+            z-index: 2;
+        }
+        .header-bar h1 {
+            margin: 0;
+        }
+        .back-btn {
+            position: relative;
+            right: 0;
+            top: 0;
+            padding: 8px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 6px;
+            background: #1976d2;
+            color: #fff;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: background 0.2s;
+        }
+        .back-btn:hover {
+            background: #125ea7;
+        }
+        iframe {
+            width: 95vw;
+            height: 90vh;
+            max-width: 1200px;
+            max-height: 800px;
+            min-width: 320px;
+            min-height: 200px;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+            background: #fff;
+        }
+        @media (max-width: 600px) {
+            iframe {
+                width: 100vw;
+                height: 80vh;
+                border-radius: 0;
+            }
+            .header-bar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px;
+            }
+            .back-btn {
+                margin-top: 10px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-bar">
+        <h1>Công cụ AI</h1>
+        <button class="back-btn" onclick="history.back()">Back</button>
+    </div>
+    <div style="display: flex; justify-content: center; align-items:center; height: 100vh">
+        <iframe src="https://ai.invideo.io/workspace/d6afcf90-e0f8-4d72-831d-6bbb558a92b7/v40-copilot"></iframe>
+    </div>
+</body>
